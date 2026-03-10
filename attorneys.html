@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Our Attorneys | Adeyemi & Partners — Meet our team of experienced corporate lawyers and Senior Advocates of Nigeria." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Our Attorneys | Adeyemi & Partners" />
+  <meta property="og:description" content="Explore our team of experienced senior advocates, partners, and associates across all practice areas." />
+
+  <title>Our Attorneys | Adeyemi & Partners</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=EB+Garamond:ital@0;1&family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .ap-atty-filter-bar {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .ap-atty-filter-btn {
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 0.6rem 1.4rem;
+      border: 1px solid var(--ap-muted);
+      background: transparent;
+      color: var(--ap-body-text);
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .ap-atty-filter-btn:hover,
+    .ap-atty-filter-btn.active {
+      background: var(--ap-gold);
+      color: #ffffff;
+      border-color: var(--ap-gold);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== SITE HEADER ========== -->
+  <header class="ap-site-header">
+
+    <div class="ap-topbar">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="ap-topbar-left d-flex align-items-center gap-3">
+            <a href="tel:+2348035550192" class="ap-topbar-link">
+              <i class="bi bi-telephone-fill"></i>
+              <span>+234 (0) 803 555 0192</span>
+            </a>
+            <span class="ap-topbar-sep d-none d-sm-inline">|</span>
+            <a href="mailto:info@adeyemipartners.com" class="ap-topbar-link d-none d-sm-flex">
+              <i class="bi bi-envelope-fill"></i>
+              <span>info@adeyemipartners.com</span>
+            </a>
+          </div>
+          <div class="ap-topbar-right d-flex align-items-center gap-3">
+            <a href="#" class="ap-topbar-social" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="ap-topbar-social" aria-label="Twitter / X"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg ap-navbar-main" aria-label="Primary navigation">
+      <div class="container">
+        <a class="navbar-brand ap-brand-main" href="index.html">
+          <div class="ap-logo-icon"><i class="bi bi-bank2"></i></div>
+          <div class="ap-logo-text">
+            <span class="ap-logo-name">Adeyemi <span class="ap-logo-amp">&amp;</span> Partners</span>
+            <span class="ap-logo-tagline">Corporate Legal Counsel · Abuja, Nigeria</span>
+          </div>
+        </a>
+        <button class="navbar-toggler ap-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link ap-nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link ap-nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link ap-nav-link" href="practice-areas.html">Practice Areas</a></li>
+            <li class="nav-item"><a class="nav-link ap-nav-link active" href="attorneys.html">Our Attorneys</a></li>
+            <li class="nav-item"><a class="nav-link ap-nav-link" href="insights.html">Insights</a></li>
+            <li class="nav-item"><a class="nav-link ap-nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+              <a class="btn ap-hero-btn-gold px-4" href="contact.html">Request a Consultation</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="ap-inner-hero"
+    style="background-image: url('assets/gift-habeshaw-feUjiSv7eM8-unsplash.jpg');">
+    <div class="ap-inner-hero-overlay"></div>
+    <div class="container ap-inner-hero-content position-relative">
+      <p class="ap-inner-hero-eyebrow">
+        <span class="ap-eyebrow-line"></span>
+        Leadership
+        <span class="ap-eyebrow-line"></span>
+      </p>
+      <h1 class="ap-inner-hero-title">Our Attorneys</h1>
+      <nav aria-label="breadcrumb" class="mt-3">
+        <ol class="breadcrumb ap-breadcrumb-inner mb-0">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Our Attorneys</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ATTORNEYS SECTION -->
+  <section class="ap-section ap-bg-parchment">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <p class="ap-section-label">Expert Legal Talent</p>
+        <h2 class="ap-section-title-display">Meet Our Team</h2>
+        <p class="ap-body-text" style="max-width: 600px; margin: 1.5rem auto 0;">Our team of 48+ legal professionals includes Senior Advocates of Nigeria, Lagos and Abuja-based partners, and specialists across all major practice areas. We invest in our people—and it shows in the caliber of counsel we deliver.</p>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="ap-atty-filter-bar">
+        <button class="ap-atty-filter-btn active" data-filter="all">All</button>
+        <button class="ap-atty-filter-btn" data-filter="corporate">Corporate</button>
+        <button class="ap-atty-filter-btn" data-filter="ma">M&A</button>
+        <button class="ap-atty-filter-btn" data-filter="disputes">Disputes</button>
+        <button class="ap-atty-filter-btn" data-filter="energy">Energy</button>
+        <button class="ap-atty-filter-btn" data-filter="banking">Banking</button>
+      </div>
+
+      <!-- Attorneys Grid -->
+      <div class="row g-4 mb-5" id="attorneyGrid">
+
+        <!-- Attorney 7 -->
+        <div class="col-md-6 col-lg-4" data-practice="corporate ma">
+          <div class="ap-atty-card">
+            <div class="ap-atty-img-wrap">
+              <img src="assets/abenezer-shewaga-xc5gojDaxW8-unsplash.jpg" alt="Barrister Nneka Okoye" />
+              <div class="ap-atty-overlay">
+                <div class="ap-atty-overlay-content">
+                  <a href="mailto:n.okoye@adeyemipartners.com" class="ap-atty-social-link" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                  <a href="#" class="ap-atty-social-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="ap-atty-info">
+              <h3 class="ap-atty-name">Barrister Nneka Okoye</h3>
+              <p class="ap-atty-title">Partner, Corporate & M&A</p>
+              <p class="ap-atty-bio">Nneka is a distinguished corporate lawyer with extensive experience in mergers and acquisitions, joint ventures, and corporate restructuring. She has led numerous high-value transactions for both Nigerian and international clients, bringing strategic insight and meticulous attention to detail to every deal.</p>
+              <ul class="ap-atty-practices">
+                <li>Corporate Law</li>
+                <li>M&A</li>
+                <li>Joint Ventures</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Attorney 3 -->
+        <div class="col-md-6 col-lg-4" data-practice="banking corporate">
+          <div class="ap-atty-card">
+            <div class="ap-atty-img-wrap">
+              <img src="assets/150-billi-YKYaP4QYiEY-unsplash.jpg" alt="Barrister Biodun Oluwaseun" />
+              <div class="ap-atty-overlay">
+                <div class="ap-atty-overlay-content">
+                  <a href="mailto:b.oluwaseun@adeyemipartners.com" class="ap-atty-social-link" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                  <a href="#" class="ap-atty-social-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="ap-atty-info">
+              <h3 class="ap-atty-name">Barrister Biodun Oluwaseun</h3>
+              <p class="ap-atty-title">Partner, Banking & Finance</p>
+              <p class="ap-atty-bio">Biodun is a specialist in banking law, project finance, and structured financing. He regularly advises leading Nigerian and international financial institutions on syndicated lending, debt restructuring, and CBN regulatory compliance. He brings 15+ years of experience in the financial services sector.</p>
+              <ul class="ap-atty-practices">
+                <li>Banking & Finance</li>
+                <li>Project Finance</li>
+                <li>Regulatory Compliance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Attorney 9 -->
+        <div class="col-md-6 col-lg-4" data-practice="energy corporate">
+          <div class="ap-atty-card">
+            <div class="ap-atty-img-wrap">
+              <img src="assets/nhlakanipho-ndwandwe-2hhY4FaKYLY-unsplash.jpg" alt="Barrister Kolawole Adeyinka" />
+              <div class="ap-atty-overlay">
+                <div class="ap-atty-overlay-content">
+                  <a href="mailto:k.adeyinka@adeyemipartners.com" class="ap-atty-social-link" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                  <a href="#" class="ap-atty-social-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="ap-atty-info">
+              <h3 class="ap-atty-name">Barrister Kolawole Adeyinka</h3>
+              <p class="ap-atty-title">Associate, Energy & Corporate</p>
+              <p class="ap-atty-bio">Kolawole focuses on energy sector transactions and corporate advisory services. He advises on oil and gas contracts, regulatory compliance, and corporate governance matters for energy companies. His technical background in petroleum engineering provides unique insights into energy law matters.</p>
+              <ul class="ap-atty-practices">
+                <li>Energy Law</li>
+                <li>Oil & Gas</li>
+                <li>Corporate Governance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Attorney 1 -->
+        <div class="col-md-6 col-lg-4" data-practice="corporate ma">
+          <div class="ap-atty-card">
+            <div class="ap-atty-img-wrap">
+              <img src="assets/shawn-gauthney-RxkP0Z-3nG0-unsplash.jpg" alt="Chief Chukwuemeka Adeyemi" />
+              <div class="ap-atty-overlay">
+                <div class="ap-atty-overlay-content">
+                  <a href="mailto:c.adeyemi@adeyemipartners.com" class="ap-atty-social-link" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                  <a href="#" class="ap-atty-social-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="ap-atty-info">
+              <h3 class="ap-atty-name">Chief Chukwuemeka Adeyemi</h3>
+              <p class="ap-atty-title">Founder & Senior Partner, SAN</p>
+              <p class="ap-atty-bio">Chief Adeyemi is a Senior Advocate of Nigeria and foremost corporate counsel with 25+ years' experience in mergers & acquisitions, corporate governance, and capital markets. He leads the firm's strategic direction and maintains significant involvement in the firm's flagship matters.</p>
+              <ul class="ap-atty-practices">
+                <li>Corporate Governance</li>
+                <li>M&A</li>
+                <li>Capital Markets</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Attorney 5 -->
+        <div class="col-md-6 col-lg-4" data-practice="corporate disputes">
+          <div class="ap-atty-card">
+            <div class="ap-atty-img-wrap">
+              <img src="assets/raymond-owusu-afriyie-ooKBx8TtRTY-unsplash.jpg" alt="Barrister Adaobi Mbakwe" />
+              <div class="ap-atty-overlay">
+                <div class="ap-atty-overlay-content">
+                  <a href="mailto:a.mbakwe@adeyemipartners.com" class="ap-atty-social-link" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                  <a href="#" class="ap-atty-social-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="ap-atty-info">
+              <h3 class="ap-atty-name">Barrister Adaobi Mbakwe</h3>
+              <p class="ap-atty-title">Associate, Corporate & Governance</p>
+              <p class="ap-atty-bio">Adaobi is a rising corporate counsel specializing in CAMA compliance, shareholder agreements, and corporate governance matters. She advises emerging technology companies, family offices, and multinational subsidiaries on structuring, regulatory compliance, and corporate transactions. She brings innovative thinking to complex governance challenges.</p>
+              <ul class="ap-atty-practices">
+                <li>Corporate Governance</li>
+                <li>Startup Legal</li>
+                <li>Regulatory Compliance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Attorney 8 -->
+        <div class="col-md-6 col-lg-4" data-practice="disputes banking">
+          <div class="ap-atty-card">
+            <div class="ap-atty-img-wrap">
+              <img src="assets/the-jopwell-collection-LJL7wx7PM3Y-unsplash.jpg" alt="Barrister Funmi Adebayo" />
+              <div class="ap-atty-overlay">
+                <div class="ap-atty-overlay-content">
+                  <a href="mailto:f.adebayo@adeyemipartners.com" class="ap-atty-social-link" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                  <a href="#" class="ap-atty-social-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="ap-atty-info">
+              <h3 class="ap-atty-name">Barrister Funmi Adebayo</h3>
+              <p class="ap-atty-title">Senior Associate, Disputes & Banking</p>
+              <p class="ap-atty-bio">Funmi specializes in commercial litigation and banking disputes, with particular expertise in financial services regulation and debt recovery. She has successfully represented clients in complex litigation matters before Nigerian courts and arbitration tribunals, achieving favorable outcomes in multi-million naira disputes.</p>
+              <ul class="ap-atty-practices">
+                <li>Commercial Litigation</li>
+                <li>Banking Disputes</li>
+                <li>Debt Recovery</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Attorney 2 -->
+        <div class="col-md-6 col-lg-4" data-practice="disputes energy">
+          <div class="ap-atty-card">
+            <div class="ap-atty-img-wrap">
+              <img src="assets/gabbiistudios-gDT9ZM6oMdA-unsplash.jpg" alt="Barrister Chioma Okafor" />
+              <div class="ap-atty-overlay">
+                <div class="ap-atty-overlay-content">
+                  <a href="mailto:c.okafor@adeyemipartners.com" class="ap-atty-social-link" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                  <a href="#" class="ap-atty-social-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="ap-atty-info">
+              <h3 class="ap-atty-name">Barrister Chioma Okafor</h3>
+              <p class="ap-atty-title">Partner, Dispute Resolution</p>
+              <p class="ap-atty-bio">Chioma is a leading dispute resolution counsel with deep expertise in international commercial arbitration, energy sector litigation, and complex contract disputes. She has represented major multinationals in LCIA, ICC, and Nigerian court proceedings involving matters exceeding ₦8 billion.</p>
+              <ul class="ap-atty-practices">
+                <li>Dispute Resolution</li>
+                <li>Energy Law</li>
+                <li>International Arbitration</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Attorney 10 -->
+        <div class="col-md-6 col-lg-4" data-practice="banking corporate">
+          <div class="ap-atty-card">
+            <div class="ap-atty-img-wrap">
+              <img src="assets/ilias-chebbi-v0aqhLkVshM-unsplash.jpg" alt="Barrister Emeka Nwosu" />
+              <div class="ap-atty-overlay">
+                <div class="ap-atty-overlay-content">
+                  <a href="mailto:e.nwosu@adeyemipartners.com" class="ap-atty-social-link" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                  <a href="#" class="ap-atty-social-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="ap-atty-info">
+              <h3 class="ap-atty-name">Barrister Emeka Nwosu</h3>
+              <p class="ap-atty-title">Partner, Banking & Finance</p>
+              <p class="ap-atty-bio">Emeka is a banking and finance expert with over 15 years of experience in structured finance, regulatory compliance, and financial institutions advisory. He has structured complex financing arrangements for major infrastructure projects and advised on CBN regulatory matters affecting the financial services sector.</p>
+              <ul class="ap-atty-practices">
+                <li>Banking & Finance</li>
+                <li>Structured Finance</li>
+                <li>Regulatory Compliance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Attorney 4 -->
+        <div class="col-md-6 col-lg-4" data-practice="energy ma">
+          <div class="ap-atty-card">
+            <div class="ap-atty-img-wrap">
+              <img src="assets/dellon-thomas-uVduOMRIHHg-unsplash.jpg" alt="Barrister Namdi Ejiofor" />
+              <div class="ap-atty-overlay">
+                <div class="ap-atty-overlay-content">
+                  <a href="mailto:n.ejiofor@adeyemipartners.com" class="ap-atty-social-link" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                  <a href="#" class="ap-atty-social-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="ap-atty-info">
+              <h3 class="ap-atty-name">Barrister Namdi Ejiofor</h3>
+              <p class="ap-atty-title">Partner, Energy & Resources</p>
+              <p class="ap-atty-bio">Namdi is an energy law specialist with deep technical knowledge of Nigeria's upstream, midstream, and downstream sectors. He is recognised for expertise in the Petroleum Industry Act (PIA), host community agreements, and energy project transactions, with particular focus on post-PIA compliance structures.</p>
+              <ul class="ap-atty-practices">
+                <li>Energy & Resources</li>
+                <li>M&A (Energy)</li>
+                <li>Host Community Agreements</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Attorney 6 -->
+        <div class="col-md-6 col-lg-4" data-practice="banking energy">
+          <div class="ap-atty-card">
+            <div class="ap-atty-img-wrap">
+              <img src="assets/chris-ejike-tj_rCakvxE8-unsplash.jpg" alt="Barrister Tamuno Kaosara" />
+              <div class="ap-atty-overlay">
+                <div class="ap-atty-overlay-content">
+                  <a href="mailto:t.kaosara@adeyemipartners.com" class="ap-atty-social-link" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                  <a href="#" class="ap-atty-social-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="ap-atty-info">
+              <h3 class="ap-atty-name">Barrister Tamuno Kaosara</h3>
+              <p class="ap-atty-title">Senior Associate, Banking & Energy</p>
+              <p class="ap-atty-bio">Tamuno is a senior-level associate with 6 years' experience spanning banking, energy, and infrastructure finance. He has worked on significant energy project finance transactions and complex syndicated lending arrangements. He is known for his attention to technical detail and practical problem-solving approach.</p>
+              <ul class="ap-atty-practices">
+                <li>Banking & Finance</li>
+                <li>Energy Finance</li>
+                <li>Infrastructure</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- JOIN OUR TEAM CTA -->
+  <section class="ap-section" style="background: linear-gradient(135deg, #1C1008 0%, #2c1a0a 100%); padding: 60px 0; text-align: center;">
+    <div class="container">
+      <h2 style="font-family: var(--font-heading); font-size: 2rem; font-weight: 600; color: #ffffff; margin-bottom: 1rem;">Join Our Team</h2>
+      <p style="font-family: var(--font-body); color: rgba(255, 255, 255, 0.8); font-size: 1rem; margin-bottom: 1.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">We are always seeking talented lawyers passionate about excellence. If you are interested in joining Adeyemi & Partners, we'd love to hear from you.</p>
+      <a href="mailto:careers@adeyemipartners.com" class="btn ap-hero-btn-gold px-4">View Career Opportunities</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="ap-footer-v2">
+
+    <div class="ap-footer-gold-rule"></div>
+
+    <div class="ap-footer-main">
+      <div class="container">
+        <div class="row g-5">
+
+          <div class="col-lg-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="ap-footer-logo-icon">
+                <i class="bi bi-bank2"></i>
+              </div>
+              <div>
+                <p class="ap-footer-firm-name mb-0">Adeyemi <span class="ap-logo-amp">&</span> Partners</p>
+                <p class="ap-footer-firm-sub mb-0">Corporate Legal Counsel</p>
+              </div>
+            </div>
+            <p class="ap-footer-blurb">Nigeria's premier corporate law firm — delivering strategic legal counsel with excellence, integrity, and global perspective since 1998.</p>
+            <div class="d-flex gap-2 mt-4">
+              <a href="#" class="ap-footer-social-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="ap-footer-social-link" aria-label="Twitter/X"><i class="bi bi-twitter-x"></i></a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-2">
+            <h6 class="ap-footer-col-heading">Firm</h6>
+            <ul class="ap-footer-nav">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="attorneys.html">Our Team</a></li>
+              <li><a href="insights.html">Insights</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-sm-6 col-lg-2">
+            <h6 class="ap-footer-col-heading">Practice Areas</h6>
+            <ul class="ap-footer-nav">
+              <li><a href="practice-areas.html">Corporate Governance</a></li>
+              <li><a href="practice-areas.html">M&A</a></li>
+              <li><a href="practice-areas.html">Energy</a></li>
+              <li><a href="practice-areas.html">Banking & Finance</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <h6 class="ap-footer-col-heading">Contact</h6>
+            <address class="ap-footer-address">
+              <div class="ap-footer-addr-row">
+                <i class="bi bi-geo-alt-fill"></i>
+                <span>Plot 24, Adetokunbo Ademola Crescent, Wuse II, Abuja FCT, Nigeria</span>
+              </div>
+              <div class="ap-footer-addr-row">
+                <i class="bi bi-telephone-fill"></i>
+                <span><a href="tel:+2348035550192">+234 (0) 803 555 0192</a></span>
+              </div>
+              <div class="ap-footer-addr-row">
+                <i class="bi bi-envelope-fill"></i>
+                <span><a href="mailto:info@adeyemipartners.com">info@adeyemipartners.com</a></span>
+              </div>
+            </address>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="ap-footer-copy-bar" style="background-color: #0f0804; border-top: 1px solid rgba(196, 150, 58, 0.15); padding: 1.5rem 0;">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+          <p class="mb-0 ap-footer-copy">&copy; 2026 Adeyemi & Partners. All rights reserved. | Regulated by the Nigerian Bar Association</p>
+          <p class="mb-0 ap-footer-copy">Privacy Policy | Disclaimer | Attorney Advertising</p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <button class="ap-scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmQ+N53/mBnhZ8SIBzf3XGdYkpZ" crossorigin="anonymous"></script>
+  <script>
+    (function () {
+      // Filter functionality
+      const filterBtns = document.querySelectorAll('.ap-atty-filter-btn');
+      const attorneyCards = document.querySelectorAll('[data-practice]');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', function () {
+          const filter = this.getAttribute('data-filter');
+
+          // Update active button
+          filterBtns.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+
+          // Filter cards
+          attorneyCards.forEach(card => {
+            if (filter === 'all') {
+              card.style.display = 'block';
+            } else {
+              const practices = card.getAttribute('data-practice').split(' ');
+              if (practices.includes(filter)) {
+                card.style.display = 'block';
+              } else {
+                card.style.display = 'none';
+              }
+            }
+          });
+        });
+      });
+
+      // Scroll to top button
+      var scrollBtn = document.getElementById('scrollTop');
+      window.addEventListener('scroll', function () {
+        scrollBtn.classList.toggle('ap-scroll-visible', window.scrollY > 300);
+      }, { passive: true });
+      scrollBtn.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
+
+    // Reveal on scroll
+    (function () {
+      var revealEls = document.querySelectorAll(
+        '.ap-section-title-display, .ap-section-title-md, .ap-section-label, .ap-card, .ap-atty-card, .ap-img-frame, .ap-stat-item'
+      );
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      revealEls.forEach(function (el) {
+        if (el.getBoundingClientRect().top > window.innerHeight * 0.9) {
+          el.classList.add('ap-reveal');
+          observer.observe(el);
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
