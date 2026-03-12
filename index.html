@@ -95,6 +95,9 @@
               <a class="nav-link ap-nav-link" href="practice-areas.html">Practice Areas</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link ap-nav-link" href="notable-matters.html">Our Work</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link ap-nav-link" href="attorneys.html">Our Attorneys</a>
             </li>
             <li class="nav-item">
@@ -268,6 +271,76 @@
           </div>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== SECTION 3b: NOTABLE MATTERS PREVIEW ========== -->
+  <section class="ap-featured-matters" aria-label="Notable matters preview">
+    <div class="container">
+      <div class="text-center mb-5">
+        <p class="ap-section-label">Our Work</p>
+        <h2 class="ap-section-title-display">Notable Matters</h2>
+        <p class="ap-body-text" style="max-width: 540px; margin: 0.75rem auto 0; color: var(--ap-muted);">A selection of recent transactions and mandates across our core practice areas</p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Featured Matter 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="ap-featured-matter-card">
+            <div class="ap-matter-card-top">
+              <span class="ap-matter-type">Mergers &amp; Acquisitions</span>
+              <span class="ap-matter-year">2024</span>
+            </div>
+            <h3 class="ap-matter-title">Advised Dangote Industries on ₦47 Billion Acquisition of West African Packaging Group</h3>
+            <p class="ap-matter-desc">Represented Dangote Industries in the acquisition of the West African Packaging Group, navigating complex regulatory approvals across four jurisdictions.</p>
+            <div class="ap-matter-card-footer">
+              <span class="ap-matter-outcome">Successfully Closed</span>
+              <span class="ap-matter-industry">Manufacturing &amp; FMCG</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured Matter 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="ap-featured-matter-card">
+            <div class="ap-matter-card-top">
+              <span class="ap-matter-type">Dispute Resolution</span>
+              <span class="ap-matter-year">2023</span>
+            </div>
+            <h3 class="ap-matter-title">Represented GTBank in ICC Arbitration Against Nigerian Conglomerate</h3>
+            <p class="ap-matter-desc">Successfully represented Guaranty Trust Bank in a complex ICC arbitration involving a disputed ₦8.2 billion loan recovery and allegations of fraudulent misrepresentation.</p>
+            <div class="ap-matter-card-footer">
+              <span class="ap-matter-outcome">Award in Client's Favour</span>
+              <span class="ap-matter-industry">Financial Services</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured Matter 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="ap-featured-matter-card">
+            <div class="ap-matter-card-top">
+              <span class="ap-matter-type">Energy &amp; Resources</span>
+              <span class="ap-matter-year">2023</span>
+            </div>
+            <h3 class="ap-matter-title">Advised Seplat Energy on ₦23 Billion Upstream Asset Acquisition</h3>
+            <p class="ap-matter-desc">Represented Seplat Energy PLC in the acquisition of upstream oil and gas assets in the Niger Delta, including regulatory filings with the NUPRC and negotiation of joint operating agreements.</p>
+            <div class="ap-matter-card-footer">
+              <span class="ap-matter-outcome">Successfully Closed</span>
+              <span class="ap-matter-industry">Oil &amp; Gas</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="ap-matters-view-all">
+        <a href="notable-matters.html" class="ap-matters-view-all-link">
+          View All Notable Matters <i class="bi bi-arrow-right"></i>
+        </a>
       </div>
     </div>
   </section>
@@ -482,6 +555,7 @@
             <ul class="ap-footer-nav">
               <li><a href="about.html">About Us</a></li>
               <li><a href="attorneys.html">Our Team</a></li>
+              <li><a href="notable-matters.html">Notable Matters</a></li>
               <li><a href="insights.html">Insights</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -554,7 +628,7 @@
     // Reveal on scroll
     (function () {
       var revealEls = document.querySelectorAll(
-        '.ap-section-title-display, .ap-section-title-md, .ap-section-label, .ap-card, .ap-atty-card, .ap-img-frame, .ap-stat-item'
+        '.ap-section-title-display, .ap-section-title-md, .ap-section-label, .ap-card, .ap-atty-card, .ap-img-frame, .ap-stat-item, .ap-featured-matter-card'
       );
       var observer = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {

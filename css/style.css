@@ -4643,6 +4643,183 @@ blockquote {
 }
 
 /* ===================================================
+   NOTABLE MATTERS PAGE
+=================================================== */
+
+/* Matter Cards Grid */
+.ap-matters-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 767.98px) {
+  .ap-matters-grid { grid-template-columns: 1fr; }
+}
+
+/* Individual matter card */
+.ap-matter-card {
+  background-color: var(--ap-parchment);
+  border-left: 4px solid var(--ap-gold);
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ap-matter-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(28, 16, 8, 0.12);
+}
+
+/* Card top row: type tag + year */
+.ap-matter-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.ap-matter-type {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ap-gold);
+}
+
+.ap-matter-year {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  color: var(--ap-muted);
+  font-weight: 400;
+}
+
+/* Matter title */
+.ap-matter-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+  font-weight: 600;
+  color: var(--ap-walnut);
+  line-height: 1.3;
+  margin: 0;
+}
+
+/* Matter description */
+.ap-matter-desc {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  color: var(--ap-body-text);
+  line-height: 1.7;
+  margin: 0;
+  flex: 1;
+}
+
+/* Card footer row: outcome badge + industry */
+.ap-matter-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 0.25rem;
+}
+
+.ap-matter-outcome {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background-color: #2d5a27;
+  color: #ffffff;
+  padding: 4px 12px;
+}
+
+.ap-matter-industry {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--ap-muted);
+  font-style: italic;
+}
+
+/* ---- Notable Matters CTA Band ---- */
+.ap-matters-cta {
+  background-color: var(--ap-walnut);
+  padding: 90px 0;
+}
+
+.ap-matters-cta-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.ap-matters-cta-sub {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.72);
+  max-width: 520px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.7;
+}
+
+/* ---- Notable Matters preview section (index.html) ---- */
+.ap-featured-matters {
+  background-color: var(--ap-parchment);
+  padding: 90px 0;
+}
+
+.ap-featured-matter-card {
+  background-color: var(--ap-parchment);
+  border-top: 3px solid var(--ap-gold);
+  padding: 1.8rem 1.6rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ap-featured-matter-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(28, 16, 8, 0.1);
+}
+
+.ap-featured-matter-card .ap-matter-type { margin-bottom: 0; }
+.ap-featured-matter-card .ap-matter-title { font-size: clamp(1rem, 1.6vw, 1.2rem); }
+.ap-featured-matter-card .ap-matter-desc  { font-size: 0.85rem; }
+
+.ap-matters-view-all {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.ap-matters-view-all-link {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ap-gold);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: letter-spacing 0.2s ease, color 0.2s ease;
+}
+
+.ap-matters-view-all-link:hover {
+  color: var(--ap-gold-light);
+  letter-spacing: 0.18em;
+}
+
+/* ===================================================
    REVEAL ON SCROLL
 =================================================== */
 .ap-reveal {
