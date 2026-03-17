@@ -46,6 +46,8 @@ html {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -56,6 +58,7 @@ body {
   line-height: 1.75;
   font-size: 1rem;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1267,6 +1270,15 @@ img { max-width: 100%; height: auto; display: block; }
 ======================================= */
 .ap-blog-img-featured {
   height: 400px;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.ap-blog-img-featured img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .ap-featured-title {
@@ -2063,6 +2075,30 @@ img { max-width: 100%; height: auto; display: block; }
   .ap-about-img-wrap { min-height: 280px; }
   .ap-stat-item { padding: 1.6rem 1.2rem; min-width: 130px; }
   .ap-testimonials-section { padding: 60px 0; }
+
+  /* Hero — removed mobile height overrides, using original CSS */
+
+  /* Matters grid — 2 columns on mobile */
+  .ap-matters-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+
+  /* Hide topbar (phone/address strip) — wastes space on mobile */
+  .ap-topbar { display: none; }
+
+  /* Reduce large section padding */
+  .ap-section { padding: 40px 0; }
+}
+
+@media (max-width: 480px) {
+  /* Stat numbers too large on small phones */
+  .ap-stat-num { font-size: 1.8rem; }
+
+  /* Card padding — reduce from 2rem 1.75rem */
+  .ap-card { padding: 1.25rem 1rem; }
+  .ap-featured-matter-card { padding: 1.2rem 1rem; }
+
+  /* CTA band — reduce from 90px vertical padding */
+  .ap-matters-cta { padding: 50px 0; }
+  .ap-featured-matters { padding: 50px 0; }
 }
 
 
@@ -4835,4 +4871,273 @@ blockquote {
 
 img {
   content-visibility: auto;
+}
+
+/* ===================================================
+   COMPREHENSIVE MOBILE RESPONSIVENESS
+=================================================== */
+
+/* ── Stats band: 2×2 grid instead of full-column stack ── */
+@media (max-width: 767.98px) {
+  .ap-stats-inner { flex-direction: row; flex-wrap: wrap; }
+  .ap-stat-sep { display: none; }
+  .ap-stat-item {
+    flex: 0 0 50%;
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+  }
+  .ap-stat-item:nth-child(odd) { border-right: 1px solid rgba(201, 168, 76, 0.15); }
+}
+
+/* ── News section: section padding + 2-column grid ── */
+@media (max-width: 767.98px) {
+  .ap-news-section { padding: 56px 0; }
+  .ap-news-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .ap-news-card { padding: 1.2rem 1rem; }
+  .ap-news-title { font-size: 0.95rem; }
+}
+@media (max-width: 480px) {
+  .ap-news-section { padding: 40px 0; }
+  .ap-news-card { padding: 1rem 0.85rem; }
+  .ap-news-title { font-size: 0.88rem; }
+}
+
+/* ── Practice areas: keep 2 cols below Bootstrap's sm breakpoint ── */
+@media (max-width: 575.98px) {
+  .ap-bg-darkness .col-md-6 { width: 50%; }
+  .ap-pa-card { padding: 1.4rem 1rem 1.2rem; }
+  .ap-pa-title { font-size: 0.95rem; }
+  .ap-pa-desc { font-size: 0.8rem; }
+}
+
+/* ── Featured matters: keep 2 cols below Bootstrap's sm breakpoint ── */
+@media (max-width: 575.98px) {
+  .ap-featured-matters .col-md-6 { width: 50%; }
+  .ap-featured-matter-card { padding: 1.1rem 0.9rem; }
+  .ap-matter-title { font-size: 0.88rem; line-height: 1.3; }
+  .ap-matter-desc { font-size: 0.78rem; line-height: 1.55; }
+}
+
+/* ── Attorneys: keep 2 cols, remove single-card centering ── */
+@media (max-width: 575.98px) {
+  #attorneys .col-md-6 { width: 50%; }
+  .ap-atty-card { max-width: none; margin: 0; }
+  .ap-atty-img-wrap { height: 200px; }
+  .ap-atty-card .ap-team-body { padding: 0.9rem 0.75rem; }
+  .ap-atty-card-name { font-size: 0.88rem; }
+  .ap-atty-card-title { font-size: 0.75rem; }
+}
+
+/* ── Insights: 2 columns + section padding + compact cards ── */
+@media (max-width: 767.98px) {
+  .ap-insights-section { padding: 56px 0; }
+  .ap-insights-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .ap-insight-card-img { height: 140px; }
+  .ap-insight-card-body { padding: 1rem; }
+  .ap-insight-card-title { font-size: 0.92rem; margin-bottom: 0.5rem; }
+}
+@media (max-width: 480px) {
+  .ap-insights-section { padding: 40px 0; }
+  .ap-insight-card-img { height: 110px; }
+  .ap-insight-card-body { padding: 0.85rem; }
+  .ap-insight-card-title { font-size: 0.85rem; }
+}
+
+/* ── Notable matters: keep 2 columns on mobile ── */
+@media (max-width: 767.98px) {
+  .ap-matters-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .ap-matter-card { padding: 1.25rem 1rem; }
+  .ap-matter-card .ap-matter-title { font-size: 0.88rem; }
+  .ap-matter-card .ap-matter-desc { font-size: 0.78rem; line-height: 1.55; }
+}
+
+/* ── Global reach + newsletter: section padding ── */
+@media (max-width: 767.98px) {
+  .ap-global-reach { padding: 50px 0; }
+  .ap-newsletter-box { padding: 40px 0; margin-top: 50px; }
+}
+
+/* ===================================================
+   INNER PAGE IMPROVEMENTS — all pages
+=================================================== */
+
+/* ── About page: numbers, values, offices grids + testimonial cards ── */
+@media (max-width: 575.98px) {
+  /* "By the Numbers" & "Core Values" — keep 2 cols below Bootstrap sm */
+  .ap-bg-parchment .col-md-6,
+  .ap-bg-parchment .col-lg-3 { width: 50%; }
+
+  /* "Our Offices" — keep 2 cols (text cards are compact enough) */
+  .ap-bg-soft .col-md-4 { width: 50%; }
+}
+@media (max-width: 767.98px) {
+  .ap-testi-card { padding: 1.4rem 1.2rem 1.2rem; }
+  .ap-testimonials-section { padding: 50px 0; }
+}
+
+/* ── Attorneys page: keep 2 cols + tighten card body ── */
+@media (max-width: 575.98px) {
+  #attorneyGrid .col-md-6 { width: 50%; }
+  .ap-atty-body { padding: 1rem; }
+  .ap-atty-card-name { font-size: 0.88rem; }
+  .ap-atty-card-title { font-size: 0.76rem; }
+}
+
+/* ── Practice areas page: tablet section padding ── */
+@media (max-width: 991.98px) {
+  .ap-practice-block { padding: 45px 0; }
+}
+
+/* ── Notable matters page: CTA band padding ── */
+@media (max-width: 991.98px) {
+  .ap-matters-cta { padding: 70px 0; }
+}
+@media (max-width: 767.98px) {
+  .ap-matters-cta { padding: 50px 0; }
+}
+
+/* ── Contact page: strip, sidebar, disclaimer ── */
+@media (max-width: 767.98px) {
+  .ap-contact-strip { padding: 20px 0; }
+  .ap-contact-sidebar-v2 { padding: 1.6rem 1.25rem; }
+  .ap-disclaimer-box { padding: 1.25rem 1.25rem; }
+  .ap-disclaimer-text { font-size: 0.8rem; }
+}
+
+/* ── Filter buttons: scrollable row on small screens ── */
+@media (max-width: 575.98px) {
+  .ap-filter-btn { flex-shrink: 0; white-space: nowrap; font-size: 0.68rem; padding: 0.3rem 0.75rem; }
+}
+
+/* ── About page: "By the Numbers" — compact single row on mobile ── */
+@media (max-width: 767.98px) {
+  .ap-numbers-section { padding: 48px 0 !important; }
+  .ap-numbers-section .text-center.mb-5 { margin-bottom: 1.5rem !important; }
+  .ap-stat-col { width: 25%; }
+  .ap-stat-cell { padding: 0.75rem 0.25rem !important; }
+  .ap-stat-num-inline { font-size: 1.6rem !important; margin-bottom: 0.2rem !important; }
+  .ap-stat-lbl-inline { font-size: 0.55rem !important; letter-spacing: 0.07em !important; }
+}
+@media (max-width: 480px) {
+  .ap-stat-num-inline { font-size: 1.3rem !important; }
+  .ap-stat-lbl-inline { font-size: 0.5rem !important; letter-spacing: 0.04em !important; }
+}
+
+/* ── Reduce g-5 row gap on mobile (Bootstrap g-5 = 3rem, too wide on phone) ── */
+@media (max-width: 767.98px) {
+  .row.g-5 { --bs-gutter-x: 1.5rem; --bs-gutter-y: 1.5rem; }
+}
+@media (max-width: 575.98px) {
+  .row.g-5 { --bs-gutter-x: 1rem; --bs-gutter-y: 1rem; }
+  .row.g-4 { --bs-gutter-x: 0.75rem; --bs-gutter-y: 0.75rem; }
+}
+
+/* ============================================================
+   CARD SIZE FIXES — reduce tall/off-proportion cards on mobile
+   ============================================================ */
+
+/* ── Attorney cards: image + bio text length ── */
+/* Attorneys page: reduce image at tablet, compact text, tighten info area */
+@media (max-width: 767.98px) {
+  .ap-atty-img-wrap { height: 200px; }
+  .ap-atty-info { padding: 1.1rem 1rem 1rem; }
+  .ap-atty-name { font-size: 1rem; margin-bottom: 0.15rem; }
+  .ap-atty-title { margin-bottom: 0.5rem; }
+  .ap-atty-bio { font-size: 0.8rem; line-height: 1.55; margin-bottom: 0.6rem; }
+  .ap-atty-practices { margin-top: 0.25rem; }
+  .ap-atty-practices li { font-size: 0.76rem; margin-bottom: 0.15rem; }
+  .ap-atty-quals { gap: 4px; }
+  .ap-atty-quals span { font-size: 0.62rem; padding: 2px 6px; }
+}
+
+/* Attorney image: 300px in a ~195px-wide column is too tall */
+@media (max-width: 575.98px) {
+  .ap-atty-img-wrap { height: 160px; }
+  /* homepage attorney cards */
+  #attorneys .ap-atty-img-wrap { height: 160px; }
+  /* Attorneys page: tighten further at phone size */
+  .ap-atty-bio { font-size: 0.76rem; line-height: 1.5; margin-bottom: 0.4rem; }
+  .ap-atty-practices li { font-size: 0.72rem; }
+}
+
+/* Homepage attorney card bio text — compact font, no content cut */
+@media (max-width: 575.98px) {
+  .ap-atty-card-bio { font-size: 0.78rem; line-height: 1.5; margin-bottom: 0.4rem; }
+  .ap-atty-card-name { font-size: 0.86rem; line-height: 1.2; }
+  .ap-atty-card-title { font-size: 0.68rem; margin-bottom: 0.3rem; }
+}
+
+/* General .ap-card (about/team etc): loosen padding on small screens */
+@media (max-width: 767.98px) {
+  .ap-card { padding: 1.5rem 1.25rem; }
+}
+@media (max-width: 575.98px) {
+  .ap-card { padding: 1.2rem 0.9rem; }
+  .ap-card h4, .ap-card h5 { font-size: 0.92rem; }
+  .ap-card p { font-size: 0.8rem; line-height: 1.55; }
+}
+
+/* Testimonial quote-mark takes too much vertical space */
+@media (max-width: 767.98px) {
+  .ap-testi-card .ap-quote-mark,
+  .ap-testi-card::before { font-size: 2.5rem; margin-bottom: 0.25rem; }
+  .ap-testi-quote { font-size: 0.85rem; line-height: 1.6; margin-bottom: 0.75rem; }
+  .ap-testi-name { font-size: 0.85rem; }
+  .ap-testi-role { font-size: 0.75rem; }
+}
+
+/* Stats band: horizontal padding too wide at 575px */
+@media (max-width: 575.98px) {
+  .ap-stat-item { padding: 1.25rem 0.75rem; }
+  .ap-stat-number { font-size: 1.6rem; }
+  .ap-stat-label { font-size: 0.72rem; }
+}
+
+/* Info cards (contact sidebar, about facts): reduce padding */
+@media (max-width: 767.98px) {
+  .ap-info-card { padding: 1.5rem 1.25rem; }
+}
+@media (max-width: 575.98px) {
+  .ap-info-card { padding: 1.1rem 0.9rem; font-size: 0.82rem; }
+}
+
+/* Notable matters cards: add 575px tightening */
+@media (max-width: 575.98px) {
+  .ap-matter-card { padding: 1rem 0.85rem; }
+  .ap-matter-title { font-size: 0.85rem; margin-bottom: 0.3rem; }
+  .ap-matter-excerpt { font-size: 0.78rem; line-height: 1.5; }
+  .ap-matter-tag { font-size: 0.65rem; padding: 0.15rem 0.5rem; }
+}
+
+/* Practice area cards: tighten further at 575px */
+@media (max-width: 575.98px) {
+  .ap-pa-card { padding: 1.1rem 0.85rem 0.95rem; }
+  .ap-pa-card-title { font-size: 0.85rem; margin-bottom: 0.3rem; }
+  .ap-pa-card-text { font-size: 0.77rem; line-height: 1.5; }
+  .ap-pa-icon { width: 36px; height: 36px; margin-bottom: 0.5rem; }
+}
+
+/* News cards: tighten at 575px */
+@media (max-width: 575.98px) {
+  .ap-news-card { padding: 1rem 0.85rem; }
+  .ap-news-title { font-size: 0.83rem; line-height: 1.45; }
+  .ap-news-date, .ap-news-tag { font-size: 0.68rem; }
+  .ap-news-excerpt { font-size: 0.77rem; line-height: 1.5; }
+}
+
+/* Insight cards: tighten image and body at 575px */
+@media (max-width: 575.98px) {
+  .ap-insight-card-img { height: 110px; }
+  .ap-insight-card-body { padding: 0.85rem 0.8rem; }
+  .ap-insight-card-title { font-size: 0.83rem; line-height: 1.4; }
+  .ap-insight-card-excerpt { font-size: 0.76rem; line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .ap-insight-tag { font-size: 0.65rem; }
+}
+
+/* Featured matter cards (homepage): tighten at 575px */
+@media (max-width: 575.98px) {
+  .ap-featured-matter-card { padding: 0.95rem 0.8rem; }
+  .ap-fm-title { font-size: 0.83rem; line-height: 1.4; margin-bottom: 0.3rem; }
+  .ap-fm-text { font-size: 0.76rem; line-height: 1.5; }
+  .ap-fm-tag { font-size: 0.64rem; }
 }
