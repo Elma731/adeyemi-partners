@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Adeyemi & Partners — Balance scales on dark espresso -->
+  <rect width="32" height="32" rx="7" fill="#1C1008"/>
+  <!-- Center post -->
+  <rect x="15.25" y="5" width="1.5" height="22" rx="0.75" fill="#C4963A"/>
+  <!-- Beam crossbar -->
+  <rect x="4.5" y="9.5" width="23" height="1.5" rx="0.75" fill="#C4963A"/>
+  <!-- Left hang string -->
+  <rect x="9.75" y="11" width="1" height="3.5" rx="0.5" fill="#C4963A"/>
+  <!-- Right hang string -->
+  <rect x="21.25" y="11" width="1" height="3.5" rx="0.5" fill="#C4963A"/>
+  <!-- Left pan bowl -->
+  <path d="M6 15 Q10.25 22 14.5 15" fill="none" stroke="#C4963A" stroke-width="1.6" stroke-linecap="round"/>
+  <!-- Right pan bowl (slightly lower — unbalanced, realistic) -->
+  <path d="M17.5 16.5 Q21.75 23.5 26 16.5" fill="none" stroke="#C4963A" stroke-width="1.6" stroke-linecap="round"/>
+  <!-- Base pedestal -->
+  <rect x="12.5" y="26" width="7" height="1.5" rx="0.75" fill="#C4963A"/>
+  <!-- Top finial dot -->
+  <circle cx="16" cy="5" r="1.5" fill="#C4963A"/>
+</svg>

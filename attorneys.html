@@ -45,7 +45,43 @@
       color: #ffffff;
       border-color: var(--ap-gold);
     }
+
+    /* Fix: no gap between photo and info box on all 9 cards */
+    .ap-atty-card {
+      overflow: hidden;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+    }
+    .ap-atty-img-wrap {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 0 !important;
+      padding-bottom: 0 !important;
+      border-radius: 8px 8px 0 0;
+      display: block;
+      flex-shrink: 0;
+    }
+    .ap-atty-img-wrap img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      margin: 0 !important;
+      padding: 0 !important;
+      margin-bottom: 0 !important;
+      padding-bottom: 0 !important;
+      border-radius: 0;
+    }
+    .ap-atty-info {
+      margin-top: 0 !important;
+      border-top: none !important;
+      flex: 1;
+    }
   </style>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <meta name="theme-color" content="#1C1008">
 </head>
 <body>
 
@@ -176,7 +212,7 @@
         <div class="col-md-6 col-lg-4" data-practice="banking corporate">
           <div class="ap-atty-card">
             <div class="ap-atty-img-wrap">
-              <img src="assets/150-billi-YKYaP4QYiEY-unsplash.jpg" alt="Barrister Biodun Oluwaseun" />
+              <img src="assets/150-billi-YKYaP4QYiEY-unsplash.jpg" alt="Barrister Biodun Oluwaseun" loading="lazy" />
               <div class="ap-atty-overlay">
                 <div class="ap-atty-overlay-content">
                   <a href="mailto:b.oluwaseun@adeyemipartners.com" class="ap-atty-social-link" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
@@ -201,7 +237,7 @@
         <div class="col-md-6 col-lg-4" data-practice="energy corporate">
           <div class="ap-atty-card">
             <div class="ap-atty-img-wrap">
-              <img src="assets/nhlakanipho-ndwandwe-2hhY4FaKYLY-unsplash.jpg" alt="Barrister Kolawole Adeyinka" />
+              <img src="assets/nhlakanipho-ndwandwe-2hhY4FaKYLY-unsplash.jpg" alt="Barrister Kolawole Adeyinka" loading="lazy" />
               <div class="ap-atty-overlay">
                 <div class="ap-atty-overlay-content">
                   <a href="mailto:k.adeyinka@adeyemipartners.com" class="ap-atty-social-link" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
@@ -226,7 +262,7 @@
         <div class="col-md-6 col-lg-4" data-practice="corporate ma">
           <div class="ap-atty-card">
             <div class="ap-atty-img-wrap">
-              <img src="assets/shawn-gauthney-RxkP0Z-3nG0-unsplash.jpg" alt="Chief Chukwuemeka Adeyemi" />
+              <img src="assets/shawn-gauthney-RxkP0Z-3nG0-unsplash.jpg" alt="Chief Chukwuemeka Adeyemi" loading="lazy" />
               <div class="ap-atty-overlay">
                 <div class="ap-atty-overlay-content">
                   <a href="mailto:c.adeyemi@adeyemipartners.com" class="ap-atty-social-link" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
@@ -251,7 +287,7 @@
         <div class="col-md-6 col-lg-4" data-practice="corporate disputes">
           <div class="ap-atty-card">
             <div class="ap-atty-img-wrap">
-              <img src="assets/raymond-owusu-afriyie-ooKBx8TtRTY-unsplash.jpg" alt="Barrister Adaobi Mbakwe" />
+              <img src="assets/raymond-owusu-afriyie-ooKBx8TtRTY-unsplash.jpg" alt="Barrister Adaobi Mbakwe" loading="lazy" />
               <div class="ap-atty-overlay">
                 <div class="ap-atty-overlay-content">
                   <a href="mailto:a.mbakwe@adeyemipartners.com" class="ap-atty-social-link" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
@@ -276,7 +312,7 @@
         <div class="col-md-6 col-lg-4" data-practice="disputes banking">
           <div class="ap-atty-card">
             <div class="ap-atty-img-wrap">
-              <img src="assets/the-jopwell-collection-LJL7wx7PM3Y-unsplash.jpg" alt="Barrister Funmi Adebayo" />
+              <img src="assets/the-jopwell-collection-LJL7wx7PM3Y-unsplash.jpg" alt="Barrister Funmi Adebayo" loading="lazy" />
               <div class="ap-atty-overlay">
                 <div class="ap-atty-overlay-content">
                   <a href="mailto:f.adebayo@adeyemipartners.com" class="ap-atty-social-link" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
@@ -301,7 +337,7 @@
         <div class="col-md-6 col-lg-4" data-practice="disputes energy">
           <div class="ap-atty-card">
             <div class="ap-atty-img-wrap">
-              <img src="assets/gabbiistudios-gDT9ZM6oMdA-unsplash.jpg" alt="Barrister Chioma Okafor" />
+              <img src="assets/gabbiistudios-gDT9ZM6oMdA-unsplash.jpg" alt="Barrister Chioma Okafor" loading="lazy" />
               <div class="ap-atty-overlay">
                 <div class="ap-atty-overlay-content">
                   <a href="mailto:c.okafor@adeyemipartners.com" class="ap-atty-social-link" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
@@ -326,7 +362,7 @@
         <div class="col-md-6 col-lg-4" data-practice="banking corporate">
           <div class="ap-atty-card">
             <div class="ap-atty-img-wrap">
-              <img src="assets/ilias-chebbi-v0aqhLkVshM-unsplash.jpg" alt="Barrister Emeka Nwosu" />
+              <img src="assets/ilias-chebbi-v0aqhLkVshM-unsplash.jpg" alt="Barrister Emeka Nwosu" loading="lazy" />
               <div class="ap-atty-overlay">
                 <div class="ap-atty-overlay-content">
                   <a href="mailto:e.nwosu@adeyemipartners.com" class="ap-atty-social-link" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
@@ -351,7 +387,7 @@
         <div class="col-md-6 col-lg-4" data-practice="energy ma">
           <div class="ap-atty-card">
             <div class="ap-atty-img-wrap">
-              <img src="assets/dellon-thomas-uVduOMRIHHg-unsplash.jpg" alt="Barrister Namdi Ejiofor" />
+              <img src="assets/dellon-thomas-uVduOMRIHHg-unsplash.jpg" alt="Barrister Namdi Ejiofor" loading="lazy" />
               <div class="ap-atty-overlay">
                 <div class="ap-atty-overlay-content">
                   <a href="mailto:n.ejiofor@adeyemipartners.com" class="ap-atty-social-link" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
@@ -376,7 +412,7 @@
         <div class="col-md-6 col-lg-4" data-practice="banking energy">
           <div class="ap-atty-card">
             <div class="ap-atty-img-wrap">
-              <img src="assets/chris-ejike-tj_rCakvxE8-unsplash.jpg" alt="Barrister Tamuno Kaosara" />
+              <img src="assets/chris-ejike-tj_rCakvxE8-unsplash.jpg" alt="Barrister Tamuno Kaosara" loading="lazy" />
               <div class="ap-atty-overlay">
                 <div class="ap-atty-overlay-content">
                   <a href="mailto:t.kaosara@adeyemipartners.com" class="ap-atty-social-link" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
